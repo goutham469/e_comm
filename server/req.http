@@ -1,0 +1,105 @@
+POST http://localhost:4000/test
+Content-Type: application/json
+
+{
+    "email":"a",
+    "name":"b",
+    "profile_pic":"456"
+}
+
+###
+GET http://localhost:4000/user/list-users
+###
+
+
+
+
+### =========================
+### 1️⃣ ADD CATEGORY
+### =========================
+POST http://localhost:4000/admin/category
+Content-Type: application/json
+
+{
+  "name": "Electronics",
+  "icon": "📱"
+}
+
+### =========================
+### 2️⃣ EDIT CATEGORY
+### =========================
+PUT http://localhost:4000/admin/category/694ac5a99409e24f23506e99
+Content-Type: application/json
+
+{
+  "name": "Electronics & Gadgets",
+  "icon": "💻"
+}
+
+### =========================
+### 3️⃣ DELETE CATEGORY
+### =========================
+DELETE http://localhost:4000/admin/category/694ac5c89409e24f23506e9a
+
+### =========================
+### 4️⃣ ADD SUB-CATEGORY
+### =========================
+POST http://localhost:4000/admin/sub-category
+Content-Type: application/json
+
+{
+  "name": "Laptops",
+  "icon": "📞",
+  "categoryId": "694ac5a99409e24f23506e99"
+}
+
+### =========================
+### 5️⃣ EDIT SUB-CATEGORY
+### =========================
+PUT http://localhost:4000/admin/sub-category/694ac6419409e24f23506e9d
+Content-Type: application/json
+
+{
+  "name": "Smartphones",
+  "icon": "📱"
+}
+
+### =========================
+### 6️⃣ DELETE SUB-CATEGORY
+### =========================
+DELETE http://localhost:4000/admin/sub-category/694ac6419409e24f23506e9d
+
+
+###
+GET http://localhost:4000/public/
+###                     product section 
+POST http://localhost:4000/admin/add-product
+Content-Type: application/json
+
+{
+    "name":"Lavish Designer necklace",
+    "slug":"designer-necklace",
+    "description":"Long detailed description that is in HTML tag format comes in full page when opened",
+    "thumbnail":"url",
+    "images":[],
+    "videoUrl":"url",
+    "shortDescription":"short summary of product that comes in product card",
+    "categoryId":"694ac5a99409e24f23506e99",
+    "subCategoryId":"694ac6309409e24f23506e9c",
+    "price":4500,
+    "discount":10,
+    "available_coupons":[ { "coupon_id":"id", "coupon_name":"PROMO75", "type":"percent_discount", "value":15 }, { "coupon_id":"id", "coupon_name":"PROMO150", "type":"absolute_discount", "value":1500 } ],
+    "stock":14,
+    "ratingAverage":"4.12",
+    "ratingCount":12,
+    "reviewCount":9,
+    "visibility":[ true, false ]
+}
+
+###
+PUT http://localhost:4000/admin/edit-flash-title
+Content-Type: application/json
+
+{
+  "text":"happy new year !"
+}

@@ -1,0 +1,35 @@
+1. Complete basic setup in website - done
+2. complete setup in server with mongoDB integration -done
+
+3. complete user routes and controllers - done
++ user login, register, delete, block, unblock, list users
+- email system -----done
+
+4. complete user pages in website
+
+5. complete categories, sub-categories routes and controllers
++ all completed
+- Image upload in S3 , github URL system pending
+
+6. complete categories , sub-categories pages in website
+
+7. complete product routes and controllers - done
+
+8. complete product main page and search feature - done
+9. complete category wise, sub-category, filters, sort functions in website
+10. complete reviews, comments section
+
+
+
+1. Email integration
+2. SMS integration - done
+3. Payments integration 
+4. Order Management + tracking + updating 
+5. assigning order to delivery parther 
+6. Delivery partner ROLES and functions 
+- pending orders 
+- completed orders 
+- receive order / reject order 
+- update order status => [ updated to USER(via email), ADMIN(dashboard) ] 
+7. Maps Integration for live delivery tracking 
+8. User history management 
