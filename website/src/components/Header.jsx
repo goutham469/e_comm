@@ -35,7 +35,7 @@ function Header() {
                             className="h-10 w-10"
                         />
                         <div className="flex items-baseline">
-                            <span className="text-3xl font-bold text-yellow-500">AMAZON</span>
+                            <span className="text-3xl font-bold text-yellow-500">Goutham</span>
                             <span className="text-3xl font-bold text-red-500">.in</span>
                         </div>
                     </div>

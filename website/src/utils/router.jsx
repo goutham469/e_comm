@@ -20,6 +20,9 @@ import Users from "../Admin/Users";
 import ForgotPassword from "../pages/ForgotPassword";
 import MobileMessages from "../Admin/MobileMessages";
 import SavedLocations from "../components/SavedLocations";
+import TermsAndConditions from "../pages/TermsAndConditions";
+import RefundAndCancellation from "../pages/RefundAndCancellation";
+import ContactUs from "../pages/ContactUs";
 
 export const router = createBrowserRouter([
     {
@@ -111,5 +114,17 @@ export const router = createBrowserRouter([
     {
         path:'*',
         element:<p>404, Route not found.</p>
+    },
+    {
+        path:'/terms-and-conditions',
+        element:<TermsAndConditions/>
+    },
+    {
+        path:'refund-and-cancellation',
+        element:<RefundAndCancellation/>
+    },
+    {
+        path:'contact-us',
+        element:<ContactUs/>
     }
 ])

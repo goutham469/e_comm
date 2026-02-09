@@ -18,14 +18,7 @@ app.use(express.json());
 const { REQUEST_LOGGER, STRICT_CORS, FRONTEND_URL } = process.env;
 
 if( REQUEST_LOGGER == 'TRUE' ){ app.use( requestCsvLogger ) }
-if( STRICT_CORS == 'TRUE' )
-{ 
-    app.use( CORS({ origin:[ FRONTEND_URL ] }) )
-}
-else
-{
- app.use( CORS() ) 
-}
+app.use( CORS() ) 
 
 app.get("/", (req,res) =>  res.send("server[ e-comm ] running ..."));
 

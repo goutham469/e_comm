@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Footer() {
     return (
@@ -14,16 +15,16 @@ function Footer() {
                             Contact Us
                         </h3>
                         <p className="text-sm">
-                            Uppinuri Stores<br />
-                            Village Road, Telangana<br />
+                            Goutham Stores<br />
+                            Madhapuram, Khammam, Telangana<br />
                             India
                         </p>
 
                         <p className="mt-3 text-sm">
-                            📞 +91 98765 43210
+                            📞 +91 9398141936
                         </p>
                         <p className="text-sm">
-                            ✉️ support@uppinuristores.com
+                            ✉️ gouthamreddy9398@gmail.com
                         </p>
                     </div>
 
@@ -33,17 +34,15 @@ function Footer() {
                             Quick Links
                         </h3>
                         <ul className="space-y-2 text-sm">
-                            <li className="hover:text-white cursor-pointer">
-                                Home
+                            <li>
+                                <Link to="/" className="hover:text-white">
+                                    Home
+                                </Link>
                             </li>
-                            <li className="hover:text-white cursor-pointer">
-                                Categories
-                            </li>
-                            <li className="hover:text-white cursor-pointer">
-                                Orders
-                            </li>
-                            <li className="hover:text-white cursor-pointer">
-                                Contact
+                            <li>
+                                <Link to="/contact-us" className="hover:text-white">
+                                    Contact Us
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -54,43 +53,49 @@ function Footer() {
                             Policies
                         </h3>
                         <ul className="space-y-2 text-sm">
-                            <li className="hover:text-white cursor-pointer">
-                                Privacy Policy
+                            <li>
+                                <Link
+                                    to="/terms-and-conditions"
+                                    className="hover:text-white"
+                                >
+                                    Terms & Conditions
+                                </Link>
                             </li>
-                            <li className="hover:text-white cursor-pointer">
-                                Terms & Conditions
+                            <li>
+                                <Link
+                                    to="/refund-and-cancellation"
+                                    className="hover:text-white"
+                                >
+                                    Refund & Cancellation
+                                </Link>
                             </li>
-                            <li className="hover:text-white cursor-pointer">
-                                Refund Policy
+                            <li>
+                                <Link
+                                    to="/contact-us"
+                                    className="hover:text-white"
+                                >
+                                    Contact
+                                </Link>
                             </li>
                         </ul>
                     </div>
 
-                    {/* 4️⃣ About / Newsletter */}
+                    {/* 4️⃣ About */}
                     <div>
                         <h3 className="text-white font-semibold text-lg mb-3">
                             About
                         </h3>
-                        <p className="text-sm mb-4">
-                            We provide quality products directly from trusted
-                            sellers at affordable prices.
+                        <p className="text-sm">
+                            Goutham Stores is an independent online store
+                            providing quality products at affordable prices.
                         </p>
-
-                        <input
-                            type="email"
-                            placeholder="Your email"
-                            className="w-full p-2 rounded bg-gray-800 border border-gray-700 text-sm focus:outline-none"
-                        />
-                        <button className="mt-2 w-full bg-cyan-600 hover:bg-cyan-700 text-white p-2 rounded text-sm">
-                            Subscribe
-                        </button>
                     </div>
 
                 </div>
 
                 {/* Bottom Bar */}
                 <div className="border-t border-gray-700 mt-8 pt-4 text-center text-sm">
-                    © {new Date().getFullYear()} Uppinuri Stores. All rights reserved.
+                    © {new Date().getFullYear()} Goutham Stores. All rights reserved.
                 </div>
             </div>
         </footer>
